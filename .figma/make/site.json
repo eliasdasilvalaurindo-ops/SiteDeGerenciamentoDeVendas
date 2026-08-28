@@ -1,0 +1,10 @@
+{
+  "description": "Manage sales and inventory across four clothing stores with a modern, responsive dashboard that provides real-time insights and analytics for owners.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

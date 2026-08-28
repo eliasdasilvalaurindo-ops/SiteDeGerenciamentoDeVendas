@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  --background: #0d0c0b;
+  --foreground: #f0ebe2;
+  --card: #161412;
+  --card-foreground: #f0ebe2;
+  --primary: #c9963a;
+  --primary-foreground: #0d0c0b;
+  --secondary: #211e1b;
+  --secondary-foreground: #c8bfb0;
+  --muted: #1d1b18;
+  --muted-foreground: #7a7168;
+  --accent: #c9963a;
+  --accent-foreground: #0d0c0b;
+  --border: #2a2722;
+  --ring: #c9963a;
+  --radius: 0.75rem;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2722 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: #2a2722;
+  border-radius: 99px;
+}
+*::-webkit-scrollbar-thumb:hover { background: #3a3630; }
+
+.font-serif { font-family: 'DM Serif Display', serif; }
+.font-mono { font-family: 'DM Mono', monospace; }
